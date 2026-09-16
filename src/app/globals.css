@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A0C;
+  --foreground: #ffffff;
+  --accent: #0800ff; /* Default Neon Cyan */
+  --accent-glow: rgba(0, 240, 255, 0.25);
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.6)];
+  }
+
+  .showcase-box {
+    @apply relative rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] via-black/40 to-black/80 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.8)] overflow-hidden transition-all duration-500;
+  }
+
+  .showcase-box:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 30px var(--accent-glow);
+  }
+
+  .neon-border {
+    @apply border border-white/10 transition-all duration-300;
+  }
+  
+  .neon-border:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow), inset 0 0 12px var(--accent-glow);
+  }
+
+  .cyber-grid {
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* Facebook-style cover hero background */
+  .hero-facebook-cover {
+    background-image: linear-gradient(rgba(10,10,12,0.6), rgba(10,10,12,0.25)), url('/assets/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0C; 
+}
+::-webkit-scrollbar-thumb {
+  background: #262933; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); 
+}
