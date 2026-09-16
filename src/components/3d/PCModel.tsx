@@ -372,7 +372,7 @@ export default function PCModel({
         />
 
         {/* Post-Processing Neon Glow Bloom */}
-        <EffectComposer enableNormalPass={false}>
+        <EffectComposer enableNormalPass={true}>
           <Bloom luminanceThreshold={0.8} mipmapBlur intensity={1.1} radius={0.5} />
         </EffectComposer>
       </Canvas>

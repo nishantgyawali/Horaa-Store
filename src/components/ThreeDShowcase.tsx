@@ -156,7 +156,7 @@ export default function ThreeDShowcase() {
           maxAzimuthAngle={Math.PI / 2}
         />
 
-        <EffectComposer enableNormalPass={false}>
+        <EffectComposer >
           <Bloom luminanceThreshold={1} mipmapBlur intensity={1.5} />
         </EffectComposer >
       </Canvas>
