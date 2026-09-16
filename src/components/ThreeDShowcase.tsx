@@ -156,9 +156,9 @@ export default function ThreeDShowcase() {
           maxAzimuthAngle={Math.PI / 2}
         />
 
-        <EffectComposer >
+        <EffectComposer enableNormalPass={false}>
           <Bloom luminanceThreshold={1} mipmapBlur intensity={1.5} />
-        </EffectComposer>
+        </EffectComposer >
       </Canvas>
       <div className="absolute bottom-4 left-0 w-full text-center pointer-events-none text-xs text-gray-500 uppercase tracking-[0.2em]">
         Interactive PC Rig (Drag to Rotate)
