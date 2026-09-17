@@ -373,7 +373,7 @@ export default function PCModel({
 
         {/* Post-Processing Neon Glow Bloom */}
         <EffectComposer >
-          <Bloom luminanceThreshold={0.8} mipmapBlur intensity={1.1} radius={0.5} />
+          <Bloom luminanceThreshold={0.8} mipmapBlur intensity={0.4} radius={0.5} />
         </EffectComposer>
       </Canvas>
     </div>

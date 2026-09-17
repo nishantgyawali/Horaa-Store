@@ -157,7 +157,7 @@ export default function ThreeDShowcase() {
         />
 
         <EffectComposer >
-          <Bloom luminanceThreshold={1} mipmapBlur intensity={1.5} />
+          <Bloom luminanceThreshold={1} mipmapBlur intensity={0.5} />
         </EffectComposer >
       </Canvas>
       <div className="absolute bottom-4 left-0 w-full text-center pointer-events-none text-xs text-gray-500 uppercase tracking-[0.2em]">

@@ -17,9 +17,8 @@ export default function FeaturedBuild() {
   return (
     <section className="relative pt-32 pb-20 overflow-hidden" id="builds">
       {/* Background Cover */}
-      <div className="absolute inset-0 z-0 opacity-20">
-        <img src="/assets/cover.jpg" alt="Background Cover" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A0A0C]"></div>
+      <div className="absolute inset-0 z-0 opacity-20 bg-black">
+        <img src="/assets/cover.jpg" alt="Background Cover" className="w-full h-full object-cover opacity-50" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -27,7 +26,7 @@ export default function FeaturedBuild() {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 text-4xl md:text-6xl font-black uppercase tracking-tight mb-4"
+            className="text-white text-4xl md:text-6xl font-black uppercase tracking-tight mb-4"
           >
             Next-Gen AI & <span className="text-[var(--accent)]">Extreme Gaming</span>
           </motion.h2>
@@ -43,10 +42,7 @@ export default function FeaturedBuild() {
             className="relative group perspective"
           >
             <div className="glassmorphism neon-border rounded-2xl p-4 overflow-hidden relative aspect-square md:aspect-video lg:aspect-square flex items-center justify-center bg-black/60">
-               {/* 3D effect layers simulated with framer motion on hover */}
-               <motion.div
-                  className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,var(--accent)_0%,transparent_70%)] opacity-0 group-hover:opacity-20 transition-opacity duration-500"
-               />
+               {/* Image */}
                <img src="/assets/promo.jpg" alt="Featured Build" className="w-full h-full object-contain relative z-20 hover:scale-105 transition-transform duration-700" onError={(e) => { e.currentTarget.src = 'https://placehold.co/800x800/111/333?text=PC+Rig' }} />
                
                {/* Badges */}
@@ -100,7 +96,7 @@ export default function FeaturedBuild() {
                 href={`https://wa.me/9779851406895?text=${whatsappText}`} 
                 target="_blank" 
                 rel="noreferrer"
-                className="flex-1 bg-[var(--accent)] text-black font-bold py-4 rounded-xl text-center hover:shadow-[0_0_20px_var(--accent)] transition-all uppercase tracking-wide"
+                className="flex-1 bg-[var(--accent)] text-black font-bold py-4 rounded-xl text-center hover:bg-opacity-90 transition-all uppercase tracking-wide"
               >
                 Order via WhatsApp
               </a>

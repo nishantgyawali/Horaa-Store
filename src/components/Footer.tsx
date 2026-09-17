@@ -24,7 +24,7 @@ export default function Footer() {
           <p className="leading-relaxed max-w-md text-gray-400 text-sm">
             Nepal's premier custom PC and hardware store. We specialize in extreme liquid-cooled gaming rigs, workstation architectures, authentic components, and esports peripherals.
           </p>
-          <div className="mt-4 flex items-center gap-3 text-xs text-[var(--accent)] font-mono">
+          <div className="mt-4 flex items-center gap-3 text-xs text-gray-400 font-mono">
             <span>@horaa_storeofficial</span>
             <span>•</span>
             <span>Kathmandu, Nepal</span>
@@ -36,22 +36,22 @@ export default function Footer() {
           <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-wider">Contact & Order</h3>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-[var(--accent)] shrink-0" />
+              <Phone className="w-4 h-4 text-white shrink-0" />
               <a href="tel:+9779851406895" className="hover:text-white transition-colors">
                 +977 985-1406895
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-[var(--accent)] shrink-0" />
+              <Mail className="w-4 h-4 text-white shrink-0" />
               <a href="mailto:officialhoraastore@gmail.com" className="hover:text-white transition-colors truncate">
                 officialhoraastore@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[var(--accent)] shrink-0" />
+              <MapPin className="w-4 h-4 text-white shrink-0" />
               <span>Kathmandu, Nepal</span>
             </li>
-            <li className="text-xs text-green-400 font-mono mt-1">
+            <li className="text-xs text-gray-300 font-mono mt-1">
               ● WhatsApp Available 24/7
             </li>
           </ul>
@@ -62,17 +62,17 @@ export default function Footer() {
           <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h3>
           <ul className="flex flex-col gap-2.5 text-sm">
             <li>
-              <Link href="/builds" className="hover:text-[var(--accent)] transition-colors">
+              <Link href="/builds" className="hover:text-white transition-colors">
                 Custom Builds & Part Picker
               </Link>
             </li>
             <li>
-              <Link href="/components" className="hover:text-[var(--accent)] transition-colors">
+              <Link href="/components" className="hover:text-white transition-colors">
                 PC Components
               </Link>
             </li>
             <li>
-              <Link href="/peripherals" className="hover:text-[var(--accent)] transition-colors">
+              <Link href="/peripherals" className="hover:text-white transition-colors">
                 Gaming Peripherals
               </Link>
             </li>

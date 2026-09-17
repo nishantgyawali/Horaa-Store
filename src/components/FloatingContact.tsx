@@ -42,7 +42,7 @@ export default function FloatingContact() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-14 h-14 rounded-full flex items-center justify-center text-black shadow-[0_0_20px_var(--accent)] transition-transform duration-300 ${isOpen ? 'bg-red-500 shadow-red-500 rotate-90 text-white' : 'bg-[var(--accent)] hover:scale-110'}`}
+        className={`w-14 h-14 rounded-full flex items-center justify-center text-black transition-all duration-300 ${isOpen ? 'bg-red-500 rotate-90 text-white' : 'bg-[var(--accent)] hover:scale-110 shadow-lg'}`}
       >
         {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
       </button>
