@@ -5,8 +5,7 @@
 :root {
   --background: #0A0A0C;
   --foreground: #ffffff;
-  --accent: #0800ff; /* Default Neon Cyan */
-  --accent-glow: rgba(0, 240, 255, 0.25);
+  --accent: #ffffff; /* Minimalist White Accent */
 }
 
 @layer utilities {
@@ -15,21 +14,20 @@
   }
 
   .showcase-box {
-    @apply relative rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] via-black/40 to-black/80 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.8)] overflow-hidden transition-all duration-500;
+    @apply relative rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-2xl shadow-[0_8px_30px_rgba(0,0,0,0.4)] overflow-hidden transition-all duration-500 ease-out;
   }
 
   .showcase-box:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 30px var(--accent-glow);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   }
 
   .neon-border {
-    @apply border border-white/10 transition-all duration-300;
+    @apply border border-white/10 transition-all duration-500 ease-out;
   }
   
   .neon-border:hover {
     border-color: var(--accent);
-    box-shadow: 0 0 20px var(--accent-glow), inset 0 0 12px var(--accent-glow);
   }
 
   .cyber-grid {

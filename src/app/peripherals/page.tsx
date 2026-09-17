@@ -118,11 +118,8 @@ export default function PeripheralsPage() {
     <div className="pt-24 min-h-screen bg-[#0A0A0C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="mb-10 pb-8 border-b border-white/10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-3 rounded-full border border-[var(--accent)]/30 text-[var(--accent)] text-xs font-mono uppercase tracking-widest bg-[var(--accent)]/5">
-            <Gamepad2 className="w-3.5 h-3.5" /> Esports Gear & Battlestation Setup
-          </div>
           <h1 className="text-4xl sm:text-5xl font-black uppercase tracking-tight text-white mb-3">
-            Gaming <span className="text-[var(--accent)]">Peripherals</span>
+            Gaming Peripherals
           </h1>
           <p className="text-gray-400 text-base max-w-2xl">
             Complete your setup with ultra-high refresh gaming displays, tournament-grade wireless mice, custom mechanical keyboards, and spatial sound headsets.
@@ -137,7 +134,7 @@ export default function PeripheralsPage() {
               onClick={() => setActiveCat(cat)}
               className={`px-5 py-2.5 rounded-full text-xs font-mono uppercase tracking-wider whitespace-nowrap transition-all ${
                 activeCat === cat
-                  ? "bg-[var(--accent)] text-black font-bold shadow-[0_0_15px_var(--accent)]"
+                  ? "bg-[var(--accent)] text-black font-bold"
                   : "glassmorphism text-gray-300 hover:text-white hover:bg-white/10"
               }`}
             >
@@ -212,7 +209,7 @@ export default function PeripheralsPage() {
                       href={whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[var(--accent)] hover:bg-cyan-300 text-black font-bold text-xs uppercase tracking-wider transition-all shadow-[0_0_12px_var(--accent-glow)] shrink-0"
+                      className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[var(--accent)] hover:bg-opacity-90 text-black font-bold text-xs uppercase tracking-wider transition-all shrink-0"
                     >
                       <MessageSquare className="w-3.5 h-3.5 fill-current" />
                       <span>Order</span>

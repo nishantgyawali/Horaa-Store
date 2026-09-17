@@ -154,7 +154,7 @@ export default function BuildsPage() {
                       href={`https://wa.me/9779851406895?text=${whatsappMsg}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 bg-[var(--accent)] hover:bg-cyan-300 text-black font-bold py-3 rounded-xl uppercase tracking-wider text-xs transition-all shadow-[0_0_15px_var(--accent-glow)]"
+                      className="w-full flex items-center justify-center gap-2 bg-[var(--accent)] hover:bg-opacity-90 text-black font-bold py-3 rounded-xl uppercase tracking-wider text-xs transition-all"
                     >
                       <MessageSquare className="w-4 h-4 fill-current" /> Order via WhatsApp
                     </a>
